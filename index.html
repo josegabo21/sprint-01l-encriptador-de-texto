@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Encriptador de texto</title>
+
+</head>
+<body>
+
+	<nav class="m-1">
+		<img src="imagenes/logo.jpg" alt="logo" class="logo">
+	</nav>
+
+	<section >
+		<div class="row m-3">
+		   <div class="col-7 col-sm-1">
+			<textarea class="textarea" id="text" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
+			<p class="advertencia m-1" id="error"><img src="imagenes/anuncio.jpg" alt="icono" width="20px"> Solo letra minusculas y sin acento</p>
+
+			<div class="row m-1">
+				<div class="col-5 col-sm-2 m-1">
+					<button class="boton boton-primary " onclick="encriptar()">Encriptar</button>
+				</div>
+
+				<div class="col-5 col-sm-2 m-1">
+					<button class="boton boton-info" onclick="desencriptar()">Desencriptar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="col-4 col-sm-2 m-1 card card2">
+			<img src="imagenes/parte-encriptado.jpg" id="imagen" class="imagen image">
+
+			<section class="row left m-4" id="resultado">
+				<h1 class="center">Ningun mensaje fue encontrado</h1>
+				<p class="center">Ingrese el texto que desee encriptar o desencriptar</p>
+			</section>
+
+			<div class="col-12">
+				<button id="copiar" class="boton-info copiar" onclick="anuncio()" hidden>Copiar</button>
+			</div>
+		</div>
+
+			<footer>
+ 		<a href="https://www.linkedin.com/in/jose-rivas-8a242a1b4/"><img src="imagenes/linkedin.jpg" class="linkedin"></a>
+
+ 		<a href="https://github.com/josegabo21"><img src="imagenes/github.jpg" class="github"></a>
+ 	</footer>
+	</section>
+
+	<script src="js/script.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+ 
+</body>
+</html>
